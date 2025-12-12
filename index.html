@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Links — Link Hub</title>
+  <style>
+    :root{
+      --bg1:#0f0c29;--bg2:#302b63;--bg3:#24243e;
+      --card-bg:rgba(255,255,255,0.07);
+      --accent:#ffb92c;
+      --muted:#d1d5db;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      min-height:100vh;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+      background:linear-gradient(135deg,var(--bg1),var(--bg2),var(--bg3));
+      display:flex;align-items:center;justify-content:center;
+      padding:30px;color:#fff;
+    }
+    .card{
+      width:100%;max-width:560px;
+      background:var(--card-bg);
+      backdrop-filter:blur(12px);
+      border-radius:22px;
+      padding:28px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.45);
+      animation:fadeIn 0.7s ease;
+    }
+    @keyframes fadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+
+    header{display:flex;gap:14px;align-items:center;margin-bottom:18px}
+    .logo{
+      width:72px;height:72px;border-radius:18px;
+      background:linear-gradient(135deg,#ffefba,var(--accent));
+      color:#101010;font-size:22px;font-weight:800;
+      display:flex;align-items:center;justify-content:center;
+      box-shadow:0 4px 12px rgba(255,185,44,0.4);
+    }
+    h1{font-size:22px;font-weight:700}
+    .desc{color:var(--muted);font-size:14px;margin-top:4px}
+
+    .links{display:grid;gap:14px;margin-top:14px}
+    a.link{
+      text-decoration:none;color:inherit;
+      background:rgba(255,255,255,0.09);
+      padding:16px;border-radius:16px;
+      display:flex;justify-content:space-between;align-items:center;
+      border:1px solid rgba(255,255,255,0.12);
+      transition:0.2s ease;
+    }
+    a.link:hover{
+      transform:scale(1.03);
+      border-color:var(--accent);
+      box-shadow:0 6px 20px rgba(255,185,44,0.25);
+    }
+    .left{display:flex;gap:14px;align-items:center}
+    .fav{
+      width:48px;height:48px;border-radius:14px;
+      background:rgba(255,255,255,0.15);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:700;font-size:16px;
+    }
+
+    .meta{font-size:15px;font-weight:600;}
+    .meta small{display:block;color:var(--muted);font-size:12px}
+
+    .actions button{
+      background:var(--accent);border:none;
+      padding:10px 14px;border-radius:12px;
+      font-size:14px;font-weight:700;color:#101010;
+      transition:0.2s;
+    }
+    .actions button:hover{filter:brightness(1.15);}
+
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <header>
+      <div class="logo">LINKS</div>
+      <div>
+        <h1>My Instagram Accounts</h1>
+        <p class="desc">Click any button to open the profile</p>
+      </div>
+    </header>
+
+    <section class="links">
+      <a class="link" href="https://www.instagram.com/hashtagshoes_lb?igsh=dnU2ajU0N3M2amlo&utm_source=qr" target="_blank" rel="noopener">
+        <div class="left">
+          <div class="fav">HS</div>
+          <div class="meta">Hashtag Shoes <small>@hashtagshoes_lb</small></div>
+        </div>
+        <div class="actions">
+          <button class="primary">Open</button>
+        </div>
+      </a>
+
+      <a class="link" href="https://www.instagram.com/stateoffashion_?igsh=MXVlY2NzcGk3eG9nbg==" target="_blank" rel="noopener">
+        <div class="left">
+          <div class="fav">SF</div>
+          <div class="meta">State Of Fashion <small>@stateoffashion_</small></div>
+        </div>
+        <div class="actions">
+          <button class="primary">Open</button>
+        </div>
+      </a>
+
+      <a class="link" href="https://www.instagram.com/mohammadelmassri_?igsh=MWl2NHQxdXJidzU2cA==" target="_blank" rel="noopener">
+        <div class="left">
+          <div class="fav">MM</div>
+          <div class="meta">Mohammad El Massri <small>@mohammadelmassri_</small></div>
+        </div>
+        <div class="actions">
+          <button class="primary">Open</button>
+        </div>
+      </a>
+
+      <a class="link" href="https://www.instagram.com/evision112?igsh=MWp3eW5ncWZvYW52dw==" target="_blank" rel="noopener">
+        <div class="left">
+          <div class="fav">EV</div>
+          <div class="meta">Evision <small>@evision112</small></div>
+        </div>
+        <div class="actions">
+          <button class="primary">Open</button>
+        </div>
+      </a>
+
+    </section>
+
+    <footer>
+      <div></div>
+    </footer>
+  </main>
+</body>
+</html>
